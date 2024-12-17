@@ -30,4 +30,15 @@ describe('Testando Disparo de email', () => {
 
         expect(validarConexao).toStrictEqual(estaConectado);
     })
+
+    it('O sistema deve enviar um email', async () => {
+        const dadosEmailMock = {
+          from: '"Fred Foo" <foo@example.com>',
+          to: 'teste@teste.com',
+          subject: 'Aluguel de Livro',
+          text: 'Olá, Raphael, você alugou o livro Harry Potter e o Cálice de Fogo por 5 dias.',
+        };
+        const info = await transporter.sendMail(dadosEmailMock);
+        expect(info.accepted[0]).toBe(dadosEmailMock.to);
+      });
 })
