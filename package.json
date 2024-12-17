@@ -15,6 +15,7 @@
     "test:auth:router": "node --experimental-vm-modules node_modules/jest/bin/jest.js --testPathPattern=src/test/routes/authRoutes.test.js",
     "test:auth:service": "node --experimental-vm-modules node_modules/jest/bin/jest.js --testPathPattern=src/test/services/authService.test.js",
     "test:image:service": "node --experimental-vm-modules node_modules/jest/bin/jest.js --testPathPattern=src/test/services/livrosImagensService.test.js",
+    "test:aluguel:service": "node --experimental-vm-modules node_modules/jest/bin/jest.js --testPathPattern=src/test/services/aluguelLivroService.test.js",
     "test:email": "node --experimental-vm-modules node_modules/jest/bin/jest.js --testPathPattern=src/test/config/disparoEmail.test.js",
     "test:auth:db": "node --experimental-vm-modules node_modules/jest/bin/jest.js --testPathPattern=src/test/db/dbConfig.test.js"
   },

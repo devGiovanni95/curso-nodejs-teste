@@ -90,6 +90,10 @@ class AluguelLivroService {
       throw new Error(err.message);
     }
   }
+
+  async calcularDataDevolucao(dataAlugado, numeroDiasAlugado){
+    return true;
+  }
 }
 
 export default AluguelLivroService;
